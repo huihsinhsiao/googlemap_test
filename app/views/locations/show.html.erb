@@ -15,5 +15,9 @@
   <%= @location.longitude %>
 </p>
 
+<div>
+  <%= image_tag google_map(center: @location.name) %>
+</div>
+
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
