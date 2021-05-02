@@ -1,0 +1,60 @@
+// Place all the styles related to the rooms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  h2 {
+    text-align: center;
+  }
+
+  > div#modal {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #000000bf;
+
+    > div#chat_body {
+      height: 90vh;
+      background-color: #f55;
+
+      div#messages {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          width: max-content;
+
+          &.received {
+            background-color: chocolate;
+          }
+
+          &.sent {
+            background-color: darkblue;
+            align-self: flex-end;
+          }
+
+          &.announce {
+            align-self:center;
+            font-style: italic;
+            color: cyan;
+          }
+        }
+      }
+
+      // form#send_message {
+      //   input {
+      //   }
+
+      //   button {
+      //   }
+      // }
+    }
+  }
+}
